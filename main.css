@@ -1,0 +1,61 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.block {
+    width: 117px;
+    height: 140px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.picker-color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.picker-color:hover {
+    border: 3px solid black !important;
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+.block p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+#cube {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
