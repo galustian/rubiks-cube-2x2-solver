@@ -5,14 +5,6 @@ export class Cube {
         this.cubeColors = cubeColors;
     }
 
-    stateStr() {
-        var state = "";
-        for (const [_, colors] of this.cubeColors) {
-            state += colors.join();
-        }
-        return state;
-    }
-
     rotateSide(newCubeSides, prevSide, side) {
         newCubeSides[side][0] = prevSide[side][2];
         newCubeSides[side][1] = prevSide[side][0];
