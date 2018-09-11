@@ -1,4 +1,4 @@
-import {buildUI, codeColors, colorCodes, setCubeColor} from "./ui_helpers.js";
+import {buildUI, codeColors, colorCodes} from "./ui_helpers.js";
 import {Cube, cubeSides} from "./cube.js";
 
 var permutations = ["T", "D", "F", "B", "L", "R", "T'", "D'", "F'", "B'", "L'", "R'"];
@@ -8,10 +8,6 @@ function ready() {
     // reset color-picker selected style
     var pickerColors = document.getElementsByClassName("picker-color");
     for (let c of pickerColors) c.style.borderColor = "#fff";
-
-    // remove color-setting event listener
-    //var colors = document.getElementsByClassName("color");
-    //for (let color of colors) color.removeEventListener("click", setCubeColor);
 
     // create cube data-structure and return Cube class
     var cubeColors = {}
@@ -23,7 +19,6 @@ function ready() {
         }
         cubeColors[side] = colors;
     }
-    //document.getElementById('ready').disabled = true;
     document.body.appendChild(document.createTextNode("Solving, this might take a while... "));
     setTimeout(solve, 0, new Cube(cubeColors));
 }
